@@ -12,49 +12,40 @@ english:
 
   
 
-git clone https://github.com/badafans/v2ray-cloudfoundry.git
+`git clone https://github.com/badafans/v2ray-cloudfoundry.git`
 
-cd v2ray-cloudfoundry/v2ray
+`cd v2ray-cloudfoundry/v2ray`
 
-chmod +x *
-
-  
+`chmod +x *`
 
 //you can edit config.json as you want
 
-  
-
-cd ..
+`cd ..`
 
   
 
 //edit manifest.yml
 
-//applications:
+applications:
 
-//\- path: .
+\- path: .
 
-//  name: GetStartedGo//change this name to your cloudfoundry name
+  name: GetStartedGo//change this name to your cloudfoundry name
 
-//  random-route: true
+  random-route: true
 
-//  memory: 128M//change memory to 64M,128M,256M
+  memory: 128M//change memory to 64M,128M,256M
 
   
 
-ibmcloud target --cf
+`ibmcloud target --cf`
 
-ibmcloud cf push
+`ibmcloud cf push`
 
   
 
 //waiting cloudfoundry restart success!
 
-  
-
-  
-
-  
 
 中文说明:
 
@@ -64,21 +55,15 @@ ibmcloud cf push
 
   
 
-git clone https://github.com/badafans/v2ray-cloudfoundry.git
+`git clone https://github.com/badafans/v2ray-cloudfoundry.git`
 
-cd v2ray-cloudfoundry/v2ray
+`cd v2ray-cloudfoundry/v2ray`
 
-chmod +x *
-
-  
+`chmod +x *` 
 
 //你可以自定义修改v2ray的配置文件 config.json
 
-  
-
-cd ..
-
-  
+`cd ..`
 
 这里要自己去修改 manifest.yml文件
 
@@ -94,9 +79,9 @@ applications:
 
   
 
-ibmcloud target --cf
+`ibmcloud target --cf`
 
-ibmcloud cf push
+`ibmcloud cf push`
 
   
 
